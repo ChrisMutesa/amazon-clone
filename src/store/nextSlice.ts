@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IoMdThermometer } from 'react-icons/io';
 import { StoreProduct } from '../../type';
 
 interface NextState {

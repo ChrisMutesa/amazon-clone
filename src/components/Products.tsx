@@ -31,21 +31,20 @@ const Products = ({ productData }: any) => {
           >
             <div className="w-full h-[260px] relative">
               <Link
-                href="/"
-                // href={{
-                //   pathname: `/${_id}`,
-                //   query: {
-                //     _id: _id,
-                //     brand: brand,
-                //     category: category,
-                //     description: description,
-                //     image: image,
-                //     isNew: isNew,
-                //     oldPrice: oldPrice,
-                //     price: price,
-                //     title: title,
-                //   },
-                // }}
+                href={{
+                  pathname: `/${_id}`,
+                  query: {
+                    _id: _id,
+                    brand: brand,
+                    category: category,
+                    description: description,
+                    image: image,
+                    isNew: isNew,
+                    oldPrice: oldPrice,
+                    price: price,
+                    title: title,
+                  },
+                }}
               >
                 <Image
                   className="w-full h-full object-cover scale-90 hover:scale-100 transition-transform duration-300"
